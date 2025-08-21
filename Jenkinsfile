@@ -20,11 +20,7 @@ pipeline {
               
             }
         }
-        stage('Test'){
-            steps{
-                echo 'Testing app'
-            }
-        }
+    
         stage('Push to docker hub'){
             steps{
                 echo 'Pushing image to docker hub'
